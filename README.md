@@ -90,5 +90,28 @@ CHINESEMD   ----农历月日（例：<CHINESEMD_九月二十一>...</CHINESEMD_�
 MIWEEKS     ----某月的第几个星期几（例：<MIWEEKS_060300>...</MIWEEKS_060300>）该日期为父亲节
 EVENT       ----类似基础规则（用来定义特定的活动或者规则多个请名称后追加"_n"区分）
 ```
+> 规则中的几个固定属性详解如下
+```
+
+ <ISONLY>：
+    该项指示该规则是否唯一：
+      当该所有规则中存在该项为TRUE(大写)的则先为检测符合执行（存在多个符合的已WEIGHT值大的为准其它放弃）。
+      当不存在为TRUE的项或者存在TRUE的但不符合条件则以WEIGHT的倒叙依次执行符合条件的。
+ <WEIGHT>0</WEIGHT>
+    该项指示在该触发（IN或者OUT）中的排序（倒叙）
+ <AMOUNT>2000</AMOUNT>
+    规则触发的金额（单位为分）
+ <POINT>1</POINT>
+    规则触发的积分点数
+ <MULTIPLE>1</MULTIPLE>
+    规则触发的倍数
+ <PLUSORMINUS>FALSE</PLUSORMINUS>
+    规则指示该积分点数为增加（+）还是减少
+ <DESCRIPTION>每消费20元产生1积分不足20元的部分不予积分</DESCRIPTION>
+```
+```
+ <DEDUCTION>FALSE</DEDUCTION>
+ 
+```
 # 可提供的功能
 . 支持基础的
