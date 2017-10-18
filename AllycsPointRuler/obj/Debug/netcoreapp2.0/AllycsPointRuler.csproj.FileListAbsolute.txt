@@ -1,0 +1,10 @@
+F:\Work\PointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\AllycsPointRuler.deps.json
+F:\Work\PointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\AllycsPointRuler.dll
+F:\Work\PointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\AllycsPointRuler.pdb
+F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.csprojResolveAssemblyReference.cache
+F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.csproj.CoreCompileInputs.cache
+F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.AssemblyInfoInputs.cache
+F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.AssemblyInfo.cs
+F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.dll
+F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.pdb
+F:\Work\PointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\BaseRule.xml
