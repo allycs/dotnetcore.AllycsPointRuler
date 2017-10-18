@@ -6,14 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "PointRuler/1.0.0": {
+      "DemoNancyDotnetCore/1.0.0": {
         "dependencies": {
           "AllycsPointRuler": "1.0.0",
           "Nancy": "2.0.0-clinteastwood",
           "Nancy.Hosting.Self": "2.0.0-clinteastwood"
         },
         "runtime": {
-          "PointRuler.dll": {}
+          "DemoNancyDotnetCore.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.1": {
@@ -888,7 +888,7 @@
     }
   },
   "libraries": {
-    "PointRuler/1.0.0": {
+    "DemoNancyDotnetCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

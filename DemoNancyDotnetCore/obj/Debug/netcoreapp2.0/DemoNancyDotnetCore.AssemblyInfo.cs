@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("PointRuler")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("DemoNancyDotnetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("PointRuler")]
-[assembly: System.Reflection.AssemblyTitleAttribute("PointRuler")]
+[assembly: System.Reflection.AssemblyProductAttribute("DemoNancyDotnetCore")]
+[assembly: System.Reflection.AssemblyTitleAttribute("DemoNancyDotnetCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。

@@ -1,13 +1,11 @@
 ﻿using Nancy.Hosting.Self;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 using System.Threading;
 
-namespace PointRuler
+namespace DemoNancyDotnetCore
 {
-    internal class Program
+    class Program
     {
         public static bool _runing = false;
 
@@ -18,11 +16,10 @@ namespace PointRuler
 
             using (var host = new NancyHost(uri))
             {
-                Console.Write("Wait Fishing-Fork running ...");
+                Console.Write("等待通用积分计算API启动 ...");
                 host.Start();
                 Process p = Process.GetCurrentProcess();
-                //File.WriteAllText("./realtime.pid", p.Id.ToString());
-                Console.Write("OK\n");
+                Console.Write("启动成功\n");
                 Console.WriteLine("Port:\t" + uri.Port);
                 Console.WriteLine("PID:\t" + p.Id);
 

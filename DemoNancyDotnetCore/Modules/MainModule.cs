@@ -1,18 +1,18 @@
 ﻿using AllycsPointRuler;
+using DemoNancyDotnetCore.Models;
 using Nancy;
 using Nancy.ModelBinding;
-using PointRuler.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PointRuler.Modules
+namespace DemoNancyDotnetCore.Modules
 {
-    public class MainModule:NancyModule
+    public class MainModule : NancyModule
     {
         public MainModule()
-        { 
+        {
             //获取基本规则
             Get("/universal/ruler-info", _ => GetRulerInfo());
             //上传配置xml
@@ -71,7 +71,7 @@ namespace PointRuler.Modules
             if (model.Operation.Split('_')[1].Equals("IN", StringComparison.OrdinalIgnoreCase))
             {
                 TotalProducePoint = CalculateINPointExtend.CheckRulers(model, ListOnlyRule, ListMultiRules, calMethodModel, TotalProducePoint);
-                return Response.AsJson(new 
+                return Response.AsJson(new
                 {
                     ResultCode = "SUCCESS",
                     ResultMsg = "预测生成积分成功",
@@ -88,7 +88,7 @@ namespace PointRuler.Modules
             if (model.Operation.Split('_')[1].Equals("OUT", StringComparison.OrdinalIgnoreCase))
             {
                 var pointRulerProduct = CalculateOUTPointExtend.CheckRulers(model, ListOnlyRule, ListMultiRules, calMethodModel);
-                return Response.AsJson(new 
+                return Response.AsJson(new
                 {
                     ResultCode = "SUCCESS",
                     ResultMsg = "预测使用积分成功",
@@ -103,7 +103,7 @@ namespace PointRuler.Modules
                 });
             }
 
-            return Response.AsJson(new 
+            return Response.AsJson(new
             {
                 ResultCode = "SUCCESS",
                 ResultMsg = "预测积分成功",
