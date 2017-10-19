@@ -47,7 +47,7 @@
     <BASE>
       <ISONLY>FALSE</ISONLY>
       <WEIGHT>0</WEIGHT>
-      <AMOUNT>10</AMOUNT>
+      <AMOUNT>1000</AMOUNT>
       <POINT>100</POINT>
       <MULTIPLE>1</MULTIPLE>
       <PLUSORMINUS>FALSE</PLUSORMINUS>
@@ -109,9 +109,10 @@ EVENT       ----类似基础规则（用来定义特定的活动或者规则多�
     规则指示该积分点数为增加（+）还是减少
  <DESCRIPTION>每消费20元产生1积分不足20元的部分不予积分</DESCRIPTION>
 ```
+# OUT 规则中特有属性
 ```
  <DEDUCTION>FALSE</DEDUCTION>
- 
+    该项指示如果该次抵扣额度大于amout是否抵扣。如BASE_OUT中的BASE现由100积分付款8元但是100积分可以抵扣10元（1000分）若为true则直接抵扣。若为false则积分不可用。
 ```
 # 可提供的功能
 . 支持基础的
