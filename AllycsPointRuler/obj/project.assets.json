@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\Work\\PointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj",
+      "projectUniqueName": "F:\\Work\\AllycsPointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj",
       "projectName": "AllycsPointRuler",
-      "projectPath": "F:\\Work\\PointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj",
+      "projectPath": "F:\\Work\\AllycsPointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj",
       "packagesPath": "C:\\Users\\allycs\\.nuget\\packages\\",
-      "outputPath": "F:\\Work\\PointRuler\\AllycsPointRuler\\obj\\",
+      "outputPath": "F:\\Work\\AllycsPointRuler\\AllycsPointRuler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

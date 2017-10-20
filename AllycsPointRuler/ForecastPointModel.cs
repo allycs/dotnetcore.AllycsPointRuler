@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AllycsPointRuler
+﻿namespace AllycsPointRuler
 {
     using System;
 
+    /// <summary>
+    /// 用于计算积分的传入数据对象
+    /// </summary>
     public class ForecastPointModel
     {
         /// <summary>
@@ -18,12 +17,12 @@ namespace AllycsPointRuler
         /// <summary>
         /// 规则中金额项的触发
         /// </summary>
-        public int Amount { get; set; } = 0;
+        public Int64 Amount { get; set; } = 0;
 
         /// <summary>
         /// 可用积分
         /// </summary>
-        public int Points { get; set; } = 0;
+        public Int64 Points { get; set; } = 0;
 
         /// <summary>
         /// 预测时间

@@ -1,4 +1,6 @@
-﻿namespace AllycsPointRuler
+﻿using System;
+
+namespace AllycsPointRuler
 {
     /// <summary>
     /// 所有int类型参数0代表不计入
@@ -48,12 +50,12 @@
         /// <summary>
         /// 触发金额（单位分）
         /// </summary>
-        public int Amount { get; set; } = 0;
+        public Int64 Amount { get; set; } = 0;
 
         /// <summary>
         /// 获得积分（可负）
         /// </summary>
-        public int Point { get; set; } = 0;
+        public Int64 Point { get; set; } = 0;
 
         /// <summary>
         /// 触发多倍数(默认1倍)

@@ -5,6 +5,10 @@ namespace AllycsPointRuler
 {
     public static class RulerUtil
     {
+        public static bool ContainsOperation(string operation)
+        {
+            return PointConfigInfo.Rulers.ContainsKey(operation);
+        }
         public static void EvaluationOfIntegrals(ForecastPointModel model, PointRulerProductModel pointRulerProduct)
         {
             model.ForecastTime = model.ForecastTime.ToLocalTime();

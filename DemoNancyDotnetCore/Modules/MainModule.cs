@@ -57,8 +57,8 @@ namespace DemoNancyDotnetCore.Modules
 
         private object ForecastPointUse()
         {
-            var model = this.Bind<AllycsPointRuler.ForecastPointModel>();
-            if (!PointConfigInfo.Rulers.ContainsKey(model.Operation))
+            var model = this.Bind<ForecastPointModel>();
+            if (!RulerUtil.ContainsOperation(model.Operation))
                 return Response.AsText("触发类型未设定").WithStatusCode(HttpStatusCode.BadRequest);
             var pointRulerProduct = new PointRulerProductModel();
             //调用计算规则

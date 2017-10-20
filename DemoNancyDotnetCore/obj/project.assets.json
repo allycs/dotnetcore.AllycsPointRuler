@@ -5443,11 +5443,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\Work\\PointRuler\\DemoNancyDotnetCore\\DemoNancyDotnetCore.csproj",
+      "projectUniqueName": "F:\\Work\\AllycsPointRuler\\DemoNancyDotnetCore\\DemoNancyDotnetCore.csproj",
       "projectName": "DemoNancyDotnetCore",
-      "projectPath": "F:\\Work\\PointRuler\\DemoNancyDotnetCore\\DemoNancyDotnetCore.csproj",
+      "projectPath": "F:\\Work\\AllycsPointRuler\\DemoNancyDotnetCore\\DemoNancyDotnetCore.csproj",
       "packagesPath": "C:\\Users\\allycs\\.nuget\\packages\\",
-      "outputPath": "F:\\Work\\PointRuler\\DemoNancyDotnetCore\\obj\\",
+      "outputPath": "F:\\Work\\AllycsPointRuler\\DemoNancyDotnetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5466,8 +5466,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "F:\\Work\\PointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj": {
-              "projectPath": "F:\\Work\\PointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj"
+            "F:\\Work\\AllycsPointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj": {
+              "projectPath": "F:\\Work\\AllycsPointRuler\\AllycsPointRuler\\AllycsPointRuler.csproj"
             }
           }
         }
