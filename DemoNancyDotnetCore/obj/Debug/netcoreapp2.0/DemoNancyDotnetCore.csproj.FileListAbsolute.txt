@@ -3,12 +3,12 @@ F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\DemoNancyDotnetCo
 F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\DemoNancyDotnetCore.runtimeconfig.json
 F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\DemoNancyDotnetCore.runtimeconfig.dev.json
 F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\DemoNancyDotnetCore.dll
+F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\DemoNancyDotnetCore.pdb
 F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\AllycsPointRuler.dll
 F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\AllycsPointRuler.pdb
 F:\Work\PointRuler\DemoNancyDotnetCore\obj\Debug\netcoreapp2.0\DemoNancyDotnetCore.csprojResolveAssemblyReference.cache
 F:\Work\PointRuler\DemoNancyDotnetCore\obj\Debug\netcoreapp2.0\DemoNancyDotnetCore.csproj.CoreCompileInputs.cache
 F:\Work\PointRuler\DemoNancyDotnetCore\obj\Debug\netcoreapp2.0\DemoNancyDotnetCore.AssemblyInfoInputs.cache
 F:\Work\PointRuler\DemoNancyDotnetCore\obj\Debug\netcoreapp2.0\DemoNancyDotnetCore.AssemblyInfo.cs
-F:\Work\PointRuler\DemoNancyDotnetCore\bin\Debug\netcoreapp2.0\DemoNancyDotnetCore.pdb
 F:\Work\PointRuler\DemoNancyDotnetCore\obj\Debug\netcoreapp2.0\DemoNancyDotnetCore.dll
 F:\Work\PointRuler\DemoNancyDotnetCore\obj\Debug\netcoreapp2.0\DemoNancyDotnetCore.pdb

@@ -60,61 +60,22 @@ namespace DemoNancyDotnetCore.Modules
             var model = this.Bind<AllycsPointRuler.ForecastPointModel>();
             if (!PointConfigInfo.Rulers.ContainsKey(model.Operation))
                 return Response.AsText("触发类型未设定").WithStatusCode(HttpStatusCode.BadRequest);
-
-            model.ForecastTime = model.ForecastTime.ToLocalTime();
-            var rulDic = PointConfigInfo.Rulers[model.Operation];
-            var ListOnlyRule = rulDic.Where(w => w.Value.IsOnly == true).OrderByDescending(w => w.Value.Weight).ToList();
-            var ListMultiRules = rulDic.Where(w => w.Value.IsOnly == false).OrderByDescending(w => w.Value.Weight).ToList();
-
-            var calMethodModel = new List<CalMethodModel>();
-            int TotalProducePoint = 0;
-            if (model.Operation.Split('_')[1].Equals("IN", StringComparison.OrdinalIgnoreCase))
-            {
-                TotalProducePoint = CalculateINPointExtend.CheckRulers(model, ListOnlyRule, ListMultiRules, calMethodModel, TotalProducePoint);
-                return Response.AsJson(new
-                {
-                    ResultCode = "SUCCESS",
-                    ResultMsg = "预测生成积分成功",
-                    OriginalAmounts = model.Amount,
-                    OriginalPoints = model.Points,
-                    UsedAmounts = 0,
-                    LeftAmounts = model.Amount,
-                    UsedPoints = 0,
-                    LeftPoints = model.Points + TotalProducePoint,
-                    NewPoints = TotalProducePoint,
-                    CalMethods = calMethodModel,
-                });
-            }
-            if (model.Operation.Split('_')[1].Equals("OUT", StringComparison.OrdinalIgnoreCase))
-            {
-                var pointRulerProduct = CalculateOUTPointExtend.CheckRulers(model, ListOnlyRule, ListMultiRules, calMethodModel);
-                return Response.AsJson(new
-                {
-                    ResultCode = "SUCCESS",
-                    ResultMsg = "预测使用积分成功",
-                    OriginalAmounts = model.Amount,
-                    OriginalPoints = model.Points,
-                    UsedAmounts = pointRulerProduct.TotalProduceAmounts,
-                    LeftAmounts = model.Amount - pointRulerProduct.TotalProduceAmounts,
-                    UsedPoints = pointRulerProduct.TotalProducePoints,
-                    LeftPoints = model.Points + pointRulerProduct.TotalProducePoints,
-                    NewPoints = -pointRulerProduct.TotalProducePoints,
-                    CalMethods = calMethodModel,
-                });
-            }
-
+            var pointRulerProduct = new PointRulerProductModel();
+            //调用计算规则
+            RulerUtil.EvaluationOfIntegrals(model, pointRulerProduct);
+            //返回计算后数据
             return Response.AsJson(new
             {
                 ResultCode = "SUCCESS",
-                ResultMsg = "预测积分成功",
+                ResultMsg = "预测使用积分成功",
                 OriginalAmounts = model.Amount,
                 OriginalPoints = model.Points,
-                UsedAmounts = 0,
-                LeftAmounts = 0,
-                UsedPoints = 0,
-                LeftPoints = 0,
-                NewPoints = 0,
-                CalMethods = calMethodModel
+                UsedAmounts = pointRulerProduct.TotalProduceAmounts,
+                LeftAmounts = model.Amount - pointRulerProduct.TotalProduceAmounts,
+                UsedPoints = pointRulerProduct.TotalProducePoints,
+                LeftPoints = model.Points + pointRulerProduct.TotalProducePoints,
+                NewPoints = pointRulerProduct.TotalProducePoints,
+                CalMethods = pointRulerProduct.CalMethods
             });
         }
     }

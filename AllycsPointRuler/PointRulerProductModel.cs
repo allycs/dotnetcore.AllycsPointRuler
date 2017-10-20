@@ -8,5 +8,6 @@ namespace AllycsPointRuler
     {
         public int TotalProducePoints { get; set; } = 0;
         public int TotalProduceAmounts { get; set; } = 0;
+        public List<CalMethodModel> CalMethods { get; set; } = new List<CalMethodModel>();
     }
 }
