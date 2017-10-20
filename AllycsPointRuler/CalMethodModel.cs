@@ -7,7 +7,7 @@ namespace AllycsPointRuler
     public class CalMethodModel
     {
         public string CalMethod { get; set; }
-        public int PointChangeLog { get; set; }
-        public int CalAmount { get; set; }
+        public Int64 PointChangeLog { get; set; }
+        public Int64 CalAmount { get; set; }
     }
 }

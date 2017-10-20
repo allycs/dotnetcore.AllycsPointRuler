@@ -7,7 +7,6 @@
     {
         public static void CheckRulers(ForecastPointModel model, List<KeyValuePair<string, PointRuler>> ListOnlyRules, List<KeyValuePair<string, PointRuler>> ListMultiRules, PointRulerProductModel pointRulerProduct)
         {
-            var result = new PointRulerProductModel();
             bool hasOnlyRules = false;
             INCheckOnlyRule(model, ListOnlyRules,  pointRulerProduct, ref hasOnlyRules);
 

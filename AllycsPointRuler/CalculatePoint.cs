@@ -160,7 +160,7 @@ namespace AllycsPointRuler
             return calData;
         }
 
-        private static CalculatePointModel INPoint0(int amount, int multiple, CalculatePointModel calData)
+        private static CalculatePointModel INPoint0(Int64 amount, Int64 multiple, CalculatePointModel calData)
         {
             if (amount == 0 && multiple != 0)
             {
@@ -178,7 +178,7 @@ namespace AllycsPointRuler
             return calData;
         }
 
-        private static CalculatePointModel INPointNo0(bool plusOrMinus, int point, int amount, int multiple, CalculatePointModel calData)
+        private static CalculatePointModel INPointNo0(bool plusOrMinus, Int64 point, Int64 amount, int multiple, CalculatePointModel calData)
         {
             if (amount == 0 && multiple != 0)
             {
@@ -369,7 +369,7 @@ namespace AllycsPointRuler
             return calData;
         }
 
-        private static CalculatePointModel OUTAmount0(bool plusOrMinus, int point, int multiple, CalculatePointModel calData)
+        private static CalculatePointModel OUTAmount0(bool plusOrMinus, Int64 point, Int64 multiple, CalculatePointModel calData)
         {
             if (point != 0 && multiple != 0)
             {
@@ -399,7 +399,7 @@ namespace AllycsPointRuler
             return calData;
         }
 
-        private static CalculatePointModel OUTAmountNo0(bool deduction, bool plusOrMinus, int point, int amount, int multiple, CalculatePointModel calData)
+        private static CalculatePointModel OUTAmountNo0(bool deduction, bool plusOrMinus, Int64 point, Int64 amount, int multiple, CalculatePointModel calData)
         {
             if (point == 0 && multiple != 0)
             {

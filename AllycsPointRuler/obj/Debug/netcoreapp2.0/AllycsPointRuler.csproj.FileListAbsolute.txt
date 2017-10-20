@@ -7,3 +7,13 @@ F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.Ass
 F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.AssemblyInfo.cs
 F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.dll
 F:\Work\PointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.pdb
+F:\Work\AllycsPointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.csprojResolveAssemblyReference.cache
+F:\Work\AllycsPointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.csproj.CoreCompileInputs.cache
+F:\Work\AllycsPointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.AssemblyInfoInputs.cache
+F:\Work\AllycsPointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.AssemblyInfo.cs
+F:\Work\AllycsPointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.dll
+F:\Work\AllycsPointRuler\AllycsPointRuler\obj\Debug\netcoreapp2.0\AllycsPointRuler.pdb
+F:\Work\AllycsPointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\BaseRule.xml
+F:\Work\AllycsPointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\AllycsPointRuler.deps.json
+F:\Work\AllycsPointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\AllycsPointRuler.dll
+F:\Work\AllycsPointRuler\AllycsPointRuler\bin\Debug\netcoreapp2.0\AllycsPointRuler.pdb
